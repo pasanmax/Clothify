@@ -9,13 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Text("Colthify")
+                .font(.title)
+                .frame(width: 300)
         }
-        .padding()
+        .padding(.vertical, 8).ignoresSafeArea()
     }
 }
 
