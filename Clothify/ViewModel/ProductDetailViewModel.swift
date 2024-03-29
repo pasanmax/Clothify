@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+
+class ProductDetailViewModel : ObservableObject {
+    
+    static var shared: ProductDetailViewModel = ProductDetailViewModel()
+    
+    var combine = Set<AnyCancellable>()
+    
+    @Published var selectedProduct: Product?
+    
+    init(selectedProduct: Product? = nil) {
+        self.selectedProduct = selectedProduct
+    }
+}

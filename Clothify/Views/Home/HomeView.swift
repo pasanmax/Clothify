@@ -69,8 +69,8 @@ struct HomeView: View {
                         ForEach (productVM.saleProducts, id: \.id) {
                             product in
                             
-                            ProductView(image: "sale_product_view", title: product.title, subTitle: product.subtitle,price: product.price) {
-                                
+                            ProductView(product: product ) {
+                                                                
                             }
                         }
                     }
@@ -93,8 +93,8 @@ struct HomeView: View {
                         ForEach (productVM.newProducts, id: \.id) {
                             product in
                             
-                            ProductView(image: "new_product_view", title: product.title, subTitle: product.subtitle,price: product.price) {
-                                
+                            ProductView(product: product ) {
+                                                                
                             }
                         }
                     }
@@ -112,5 +112,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    NavigationView {
+        HomeView()
+    }
 }

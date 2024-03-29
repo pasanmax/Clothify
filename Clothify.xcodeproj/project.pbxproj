@@ -7,18 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		973E65852BB5EB790011178A /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E65842BB5EB790011178A /* Globals.swift */; };
+		973E65882BB6756E0011178A /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E65872BB6756E0011178A /* ProductDetailView.swift */; };
+		973E658A2BB677150011178A /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E65892BB677150011178A /* ProductDetailViewModel.swift */; };
+		975F8DF02BAA110A00558B5F /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F8DEF2BAA110A00558B5F /* ProductView.swift */; };
 		97630EF62B9CCF53008FF557 /* ClothifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97630EF52B9CCF53008FF557 /* ClothifyApp.swift */; };
 		97630EF82B9CCF53008FF557 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97630EF72B9CCF53008FF557 /* HomeView.swift */; };
 		97630EFA2B9CCF5A008FF557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97630EF92B9CCF5A008FF557 /* Assets.xcassets */; };
 		97630EFD2B9CCF5A008FF557 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97630EFC2B9CCF5A008FF557 /* Preview Assets.xcassets */; };
+		97ACAE242BB3481500A04379 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ACAE232BB3481500A04379 /* Product.swift */; };
+		97ACAE262BB34A5D00A04379 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ACAE252BB34A5D00A04379 /* ProductViewModel.swift */; };
+		97B921562B9D7CCC0053AEED /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97B921522B9D7CCC0053AEED /* Metropolis-Medium.otf */; };
+		97B921572B9D7CCC0053AEED /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97B921532B9D7CCC0053AEED /* Metropolis-SemiBold.otf */; };
+		97B921582B9D7CCC0053AEED /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97B921542B9D7CCC0053AEED /* Metropolis-Regular.otf */; };
+		97B921592B9D7CCC0053AEED /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97B921552B9D7CCC0053AEED /* Metropolis-Bold.otf */; };
+		97B9215C2B9D855D0053AEED /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B9215B2B9D855D0053AEED /* Launch Screen.storyboard */; };
+		97B921602B9D949A0053AEED /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9215F2B9D949A0053AEED /* UIExtension.swift */; };
+		97B921622B9DA0EF0053AEED /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B921612B9DA0EF0053AEED /* RoundButton.swift */; };
+		97B921672B9DE94B0053AEED /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B921662B9DE94B0053AEED /* HomeViewModel.swift */; };
+		97B9216A2B9DF32E0053AEED /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B921692B9DF32E0053AEED /* NavigationBarView.swift */; };
+		97B9216D2B9E1C400053AEED /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9216C2B9E1C400053AEED /* MainView.swift */; };
+		97B9216F2B9E26DB0053AEED /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9216E2B9E26DB0053AEED /* NavigationButton.swift */; };
+		97D3B8112BA0F2FE0014FE63 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */; };
+		97D85DA72BB75F4D002846CE /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D85DA62BB75F4D002846CE /* ShopView.swift */; };
+		97E66D772BA76D3700E23405 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E66D762BA76D3700E23405 /* SectionTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		973E65842BB5EB790011178A /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		973E65872BB6756E0011178A /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		973E65892BB677150011178A /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		975F8DEF2BAA110A00558B5F /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		97630EF22B9CCF53008FF557 /* Clothify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clothify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97630EF52B9CCF53008FF557 /* ClothifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothifyApp.swift; sourceTree = "<group>"; };
 		97630EF72B9CCF53008FF557 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		97630EF92B9CCF5A008FF557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97630EFC2B9CCF5A008FF557 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97ACAE232BB3481500A04379 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		97ACAE252BB34A5D00A04379 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		97B921502B9D793C0053AEED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		97B921522B9D7CCC0053AEED /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		97B921532B9D7CCC0053AEED /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		97B921542B9D7CCC0053AEED /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		97B921552B9D7CCC0053AEED /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		97B9215B2B9D855D0053AEED /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		97B9215F2B9D949A0053AEED /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		97B921612B9DA0EF0053AEED /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		97B921662B9DE94B0053AEED /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		97B921692B9DF32E0053AEED /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		97B9216C2B9E1C400053AEED /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		97B9216E2B9E26DB0053AEED /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		97D85DA62BB75F4D002846CE /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		97E66D762BA76D3700E23405 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		973E65862BB6754A0011178A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				975F8DEF2BAA110A00558B5F /* ProductView.swift */,
+				97630EF72B9CCF53008FF557 /* HomeView.swift */,
+				973E65872BB6756E0011178A /* ProductDetailView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		97630EE92B9CCF53008FF557 = {
 			isa = PBXGroup;
 			children = (
@@ -51,12 +102,16 @@
 		97630EF42B9CCF53008FF557 /* Clothify */ = {
 			isa = PBXGroup;
 			children = (
+				97B921632B9DB6B70053AEED /* Application */,
+				97B9215A2B9D7DA70053AEED /* UICommon */,
+				97B921512B9D7C040053AEED /* font */,
+				97B921502B9D793C0053AEED /* Info.plist */,
 				97630F052B9CD145008FF557 /* Model */,
-				97630F042B9CD138008FF557 /* ModelView */,
+				97630F042B9CD138008FF557 /* ViewModel */,
 				97630F032B9CD12A008FF557 /* Views */,
-				97630EF52B9CCF53008FF557 /* ClothifyApp.swift */,
 				97630EF92B9CCF5A008FF557 /* Assets.xcassets */,
 				97630EFB2B9CCF5A008FF557 /* Preview Content */,
+				97B9215B2B9D855D0053AEED /* Launch Screen.storyboard */,
 			);
 			path = Clothify;
 			sourceTree = "<group>";
@@ -72,23 +127,86 @@
 		97630F032B9CD12A008FF557 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				97630EF72B9CCF53008FF557 /* HomeView.swift */,
+				97D85DA52BB75F23002846CE /* Shop */,
+				973E65862BB6754A0011178A /* Home */,
+				97B9216B2B9E1B790053AEED /* MainTab */,
+				97B921682B9DF30A0053AEED /* Navigation */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		97630F042B9CD138008FF557 /* ModelView */ = {
+		97630F042B9CD138008FF557 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				97B921662B9DE94B0053AEED /* HomeViewModel.swift */,
+				97ACAE252BB34A5D00A04379 /* ProductViewModel.swift */,
+				973E65892BB677150011178A /* ProductDetailViewModel.swift */,
 			);
-			path = ModelView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		97630F052B9CD145008FF557 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				97ACAE232BB3481500A04379 /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		97B921512B9D7C040053AEED /* font */ = {
+			isa = PBXGroup;
+			children = (
+				97B921552B9D7CCC0053AEED /* Metropolis-Bold.otf */,
+				97B921522B9D7CCC0053AEED /* Metropolis-Medium.otf */,
+				97B921542B9D7CCC0053AEED /* Metropolis-Regular.otf */,
+				97B921532B9D7CCC0053AEED /* Metropolis-SemiBold.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		97B9215A2B9D7DA70053AEED /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				97B9215F2B9D949A0053AEED /* UIExtension.swift */,
+				97B921612B9DA0EF0053AEED /* RoundButton.swift */,
+				97B9216E2B9E26DB0053AEED /* NavigationButton.swift */,
+				97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */,
+				97E66D762BA76D3700E23405 /* SectionTitle.swift */,
+				973E65842BB5EB790011178A /* Globals.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		97B921632B9DB6B70053AEED /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				97630EF52B9CCF53008FF557 /* ClothifyApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		97B921682B9DF30A0053AEED /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				97B921692B9DF32E0053AEED /* NavigationBarView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		97B9216B2B9E1B790053AEED /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				97B9216C2B9E1C400053AEED /* MainView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		97D85DA52BB75F23002846CE /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				97D85DA62BB75F4D002846CE /* ShopView.swift */,
+			);
+			path = Shop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +267,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97B921582B9D7CCC0053AEED /* Metropolis-Regular.otf in Resources */,
+				97B921572B9D7CCC0053AEED /* Metropolis-SemiBold.otf in Resources */,
+				97B921592B9D7CCC0053AEED /* Metropolis-Bold.otf in Resources */,
+				97B9215C2B9D855D0053AEED /* Launch Screen.storyboard in Resources */,
 				97630EFD2B9CCF5A008FF557 /* Preview Assets.xcassets in Resources */,
+				97B921562B9D7CCC0053AEED /* Metropolis-Medium.otf in Resources */,
 				97630EFA2B9CCF5A008FF557 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +284,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E66D772BA76D3700E23405 /* SectionTitle.swift in Sources */,
+				97B921622B9DA0EF0053AEED /* RoundButton.swift in Sources */,
 				97630EF82B9CCF53008FF557 /* HomeView.swift in Sources */,
+				97B921602B9D949A0053AEED /* UIExtension.swift in Sources */,
+				97B921672B9DE94B0053AEED /* HomeViewModel.swift in Sources */,
+				97ACAE262BB34A5D00A04379 /* ProductViewModel.swift in Sources */,
+				97D85DA72BB75F4D002846CE /* ShopView.swift in Sources */,
+				973E65852BB5EB790011178A /* Globals.swift in Sources */,
+				973E658A2BB677150011178A /* ProductDetailViewModel.swift in Sources */,
+				97ACAE242BB3481500A04379 /* Product.swift in Sources */,
+				97B9216D2B9E1C400053AEED /* MainView.swift in Sources */,
+				97B9216F2B9E26DB0053AEED /* NavigationButton.swift in Sources */,
+				975F8DF02BAA110A00558B5F /* ProductView.swift in Sources */,
+				973E65882BB6756E0011178A /* ProductDetailView.swift in Sources */,
+				97B9216A2B9DF32E0053AEED /* NavigationBarView.swift in Sources */,
 				97630EF62B9CCF53008FF557 /* ClothifyApp.swift in Sources */,
+				97D3B8112BA0F2FE0014FE63 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +436,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Clothify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clothify/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clothify;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,9 +453,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Clothify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,9 +472,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Clothify/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clothify/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clothify;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,9 +489,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Clothify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
