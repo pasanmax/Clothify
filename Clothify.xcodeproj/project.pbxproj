@@ -30,6 +30,7 @@
 		97B9216F2B9E26DB0053AEED /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B9216E2B9E26DB0053AEED /* NavigationButton.swift */; };
 		97D3B8112BA0F2FE0014FE63 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */; };
 		97D85DA72BB75F4D002846CE /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D85DA62BB75F4D002846CE /* ShopView.swift */; };
+		97D85DA92BB7FD7C002846CE /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D85DA82BB7FD7C002846CE /* ShopViewModel.swift */; };
 		97E66D772BA76D3700E23405 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E66D762BA76D3700E23405 /* SectionTitle.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		97B9216E2B9E26DB0053AEED /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
 		97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		97D85DA62BB75F4D002846CE /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		97D85DA82BB7FD7C002846CE /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		97E66D762BA76D3700E23405 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 				97B921662B9DE94B0053AEED /* HomeViewModel.swift */,
 				97ACAE252BB34A5D00A04379 /* ProductViewModel.swift */,
 				973E65892BB677150011178A /* ProductDetailViewModel.swift */,
+				97D85DA82BB7FD7C002846CE /* ShopViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				97ACAE262BB34A5D00A04379 /* ProductViewModel.swift in Sources */,
 				97D85DA72BB75F4D002846CE /* ShopView.swift in Sources */,
 				973E65852BB5EB790011178A /* Globals.swift in Sources */,
+				97D85DA92BB7FD7C002846CE /* ShopViewModel.swift in Sources */,
 				973E658A2BB677150011178A /* ProductDetailViewModel.swift in Sources */,
 				97ACAE242BB3481500A04379 /* Product.swift in Sources */,
 				97B9216D2B9E1C400053AEED /* MainView.swift in Sources */,

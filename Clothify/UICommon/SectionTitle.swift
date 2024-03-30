@@ -25,6 +25,9 @@ struct SectionTitle: View {
                 Text(titleAll)
                     .font(.customfont(.semibold, fontSize: 16))
                     .foregroundColor(.priText)
+                    .onTapGesture {
+                        didTap?()
+                    }
             }
             HStack {
                 Text(subTitle)

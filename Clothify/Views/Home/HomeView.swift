@@ -13,6 +13,8 @@ struct HomeView: View {
     
     @StateObject var productVM = ProductViewModel.shared
     
+    @StateObject var shopVM = ShopViewModel.shared
+    
     var body: some View {
         
         ZStack {
@@ -52,9 +54,10 @@ struct HomeView: View {
                 
                 Spacer(minLength: 20)
                 
-                SectionTitle(title: "Sale", subTitle: "Super Summer Sale", titleAll: "View All") {
-                    
-                }
+                SectionTitle(title: "Sale", subTitle: "Super Summer Sale", titleAll: "View All", didTap: {
+                    homeVM.selectedTab = 1
+                    shopVM.getCategorizedProducts(category: "sale")
+                })
                 .padding(.horizontal, 20)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -84,7 +87,8 @@ struct HomeView: View {
                 Spacer(minLength: 20)
                 
                 SectionTitle(title: "New", subTitle: "You've never seen it before", titleAll: "View All") {
-                    
+                    homeVM.selectedTab = 1
+                    shopVM.getCategorizedProducts(category: "")
                 }
                 .padding(.horizontal, 20)
                 

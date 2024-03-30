@@ -8,16 +8,75 @@
 import SwiftUI
 
 struct ShopView: View {
+    
+    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
+    var column = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    
+    @StateObject var shopVM = ShopViewModel.shared
+    
+    init() {
+        self.shopVM.getAllProducts()
+    }
+    
     var body: some View {
         ZStack {
-            HStack {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                HStack {
+//                    Button {
+//                        mode.wrappedValue.dismiss()
+//                    } label: {
+//                        Image("back")
+//                            .resizable()
+//                            .scaledToFit()
+//                            .frame(width: 25, height: 25)
+//                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Image("search2")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 25, height: 25)
+                    }
+                }
+                Spacer()
+            }
+            .padding(.top, .topInsets)
+            .padding(.horizontal, 30)
+            
+            ScrollView {
+                HStack {
+                    LazyVGrid(columns: column, spacing: 20) {
+                        ForEach(shopVM.shopProducts, id: \.id) {
+                            product in
+                            
+                            ProductView(product: product ) {
+                                                                
+                            }
+                        }
+                    }
+                }
+                .padding(.top, 150)
             }
         }
+        .navigationTitle("")
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
         .ignoresSafeArea()
+//        .onAppear {
+//            self.shopVM.getAllProducts()
+//        }
     }
 }
 
 #Preview {
-    ShopView()
+    NavigationView {
+        ShopView()
+    }
+    //ShopView()
 }
