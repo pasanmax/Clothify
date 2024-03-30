@@ -11,13 +11,13 @@ import Combine
 
 class ProductDetailViewModel : ObservableObject {
     
-    static var shared: ProductDetailViewModel = ProductDetailViewModel()
+    static var shared: ProductDetailViewModel = ProductDetailViewModel(selectedProduct: nil)
     
     var combine = Set<AnyCancellable>()
     
     @Published var selectedProduct: Product?
     
-    init(selectedProduct: Product? = nil) {
+    init(selectedProduct: Product?) {
         self.selectedProduct = selectedProduct
     }
 }

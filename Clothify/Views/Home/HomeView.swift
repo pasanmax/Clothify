@@ -10,10 +10,10 @@ import SwiftUI
 struct HomeView: View {
     
     @StateObject var homeVM = HomeViewModel.shared
-    
     @StateObject var productVM = ProductViewModel.shared
-    
     @StateObject var shopVM = ShopViewModel.shared
+    
+    @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
         
@@ -75,6 +75,7 @@ struct HomeView: View {
                             ProductView(product: product ) {
                                                                 
                             }
+                            .environmentObject(cartManager)
                         }
                     }
                     .padding(.horizontal, 20)
@@ -100,6 +101,7 @@ struct HomeView: View {
                             ProductView(product: product ) {
                                                                 
                             }
+                            .environmentObject(cartManager)
                         }
                     }
                     .padding(.horizontal, 20)
@@ -118,5 +120,7 @@ struct HomeView: View {
 #Preview {
     NavigationView {
         HomeView()
+            .environmentObject(CartManager())
     }
+    
 }

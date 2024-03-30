@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject var homeVM = HomeViewModel.shared
+    @StateObject var cartManager = CartManager()
     
     var body: some View {
         ZStack {
@@ -30,10 +31,13 @@ struct MainView: View {
 //            
             if(homeVM.selectedTab == 0) {
                 HomeView()
+                    .environmentObject(cartManager)
             }else if(homeVM.selectedTab == 1) {
                 ShopView()
+                    .environmentObject(cartManager)
             }else if(homeVM.selectedTab == 2) {
-                //BagView()
+                BagView()
+                    .environmentObject(cartManager)
             }else if(homeVM.selectedTab == 3) {
                 //FavouriteView()
             }else if(homeVM.selectedTab == 4) {

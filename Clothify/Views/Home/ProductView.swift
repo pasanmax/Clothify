@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductView: View {
     
+    @EnvironmentObject var cartManager: CartManager
     @State var product: Product?
 //    var image: String = "sale_product_view"
 //    var title: String = "Product Name"
@@ -19,6 +20,7 @@ struct ProductView: View {
     var body: some View {
         NavigationLink {
             ProductDetailView(productDetailVM: ProductDetailViewModel(selectedProduct: product))
+                .environmentObject(cartManager)
         } label: {
             VStack {
                 Image(product?.img ?? "sale_product_view")
@@ -61,10 +63,10 @@ struct ProductView: View {
                     
             )
         }
-        
     }
 }
 
 #Preview {
     ProductView()
+        .environmentObject(CartManager())
 }

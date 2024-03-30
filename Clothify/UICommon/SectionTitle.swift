@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SectionTitle: View {
+    
     @State var title: String = "Title"
     @State var subTitle: String = "Sub Title"
     @State var titleAll: String = "View All"

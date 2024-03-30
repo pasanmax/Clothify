@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShopView: View {
     
-    
+    @EnvironmentObject var cartManager: CartManager
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var column = [GridItem(.adaptive(minimum: 160), spacing: 20)]
@@ -58,6 +58,7 @@ struct ShopView: View {
                             ProductView(product: product ) {
                                                                 
                             }
+                            .environmentObject(cartManager)
                         }
                     }
                 }
@@ -77,6 +78,8 @@ struct ShopView: View {
 #Preview {
     NavigationView {
         ShopView()
+            .environmentObject(CartManager())
     }
+    
     //ShopView()
 }

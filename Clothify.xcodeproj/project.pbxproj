@@ -10,6 +10,8 @@
 		973E65852BB5EB790011178A /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E65842BB5EB790011178A /* Globals.swift */; };
 		973E65882BB6756E0011178A /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E65872BB6756E0011178A /* ProductDetailView.swift */; };
 		973E658A2BB677150011178A /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973E65892BB677150011178A /* ProductDetailViewModel.swift */; };
+		974BB7A62BB8B86300089E99 /* CartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974BB7A52BB8B86300089E99 /* CartProduct.swift */; };
+		975A8A772BB8AF0100FD3738 /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A8A762BB8AF0100FD3738 /* BagView.swift */; };
 		975F8DF02BAA110A00558B5F /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975F8DEF2BAA110A00558B5F /* ProductView.swift */; };
 		97630EF62B9CCF53008FF557 /* ClothifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97630EF52B9CCF53008FF557 /* ClothifyApp.swift */; };
 		97630EF82B9CCF53008FF557 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97630EF72B9CCF53008FF557 /* HomeView.swift */; };
@@ -31,6 +33,7 @@
 		97D3B8112BA0F2FE0014FE63 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */; };
 		97D85DA72BB75F4D002846CE /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D85DA62BB75F4D002846CE /* ShopView.swift */; };
 		97D85DA92BB7FD7C002846CE /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D85DA82BB7FD7C002846CE /* ShopViewModel.swift */; };
+		97D85DAB2BB860E8002846CE /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D85DAA2BB860E8002846CE /* CartManager.swift */; };
 		97E66D772BA76D3700E23405 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E66D762BA76D3700E23405 /* SectionTitle.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,8 @@
 		973E65842BB5EB790011178A /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		973E65872BB6756E0011178A /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		973E65892BB677150011178A /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		974BB7A52BB8B86300089E99 /* CartProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProduct.swift; sourceTree = "<group>"; };
+		975A8A762BB8AF0100FD3738 /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
 		975F8DEF2BAA110A00558B5F /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		97630EF22B9CCF53008FF557 /* Clothify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clothify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97630EF52B9CCF53008FF557 /* ClothifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothifyApp.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		97D85DA62BB75F4D002846CE /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		97D85DA82BB7FD7C002846CE /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		97D85DAA2BB860E8002846CE /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		97E66D762BA76D3700E23405 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +89,14 @@
 				973E65872BB6756E0011178A /* ProductDetailView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		975A8A732BB8AEAF00FD3738 /* Bag */ = {
+			isa = PBXGroup;
+			children = (
+				975A8A762BB8AF0100FD3738 /* BagView.swift */,
+			);
+			path = Bag;
 			sourceTree = "<group>";
 		};
 		97630EE92B9CCF53008FF557 = {
@@ -129,6 +143,7 @@
 		97630F032B9CD12A008FF557 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				975A8A732BB8AEAF00FD3738 /* Bag */,
 				97D85DA52BB75F23002846CE /* Shop */,
 				973E65862BB6754A0011178A /* Home */,
 				97B9216B2B9E1B790053AEED /* MainTab */,
@@ -176,6 +191,8 @@
 				97D3B8102BA0F2FE0014FE63 /* SearchTextField.swift */,
 				97E66D762BA76D3700E23405 /* SectionTitle.swift */,
 				973E65842BB5EB790011178A /* Globals.swift */,
+				97D85DAA2BB860E8002846CE /* CartManager.swift */,
+				974BB7A52BB8B86300089E99 /* CartProduct.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -296,13 +313,16 @@
 				97D85DA72BB75F4D002846CE /* ShopView.swift in Sources */,
 				973E65852BB5EB790011178A /* Globals.swift in Sources */,
 				97D85DA92BB7FD7C002846CE /* ShopViewModel.swift in Sources */,
+				975A8A772BB8AF0100FD3738 /* BagView.swift in Sources */,
 				973E658A2BB677150011178A /* ProductDetailViewModel.swift in Sources */,
 				97ACAE242BB3481500A04379 /* Product.swift in Sources */,
 				97B9216D2B9E1C400053AEED /* MainView.swift in Sources */,
 				97B9216F2B9E26DB0053AEED /* NavigationButton.swift in Sources */,
 				975F8DF02BAA110A00558B5F /* ProductView.swift in Sources */,
 				973E65882BB6756E0011178A /* ProductDetailView.swift in Sources */,
+				97D85DAB2BB860E8002846CE /* CartManager.swift in Sources */,
 				97B9216A2B9DF32E0053AEED /* NavigationBarView.swift in Sources */,
+				974BB7A62BB8B86300089E99 /* CartProduct.swift in Sources */,
 				97630EF62B9CCF53008FF557 /* ClothifyApp.swift in Sources */,
 				97D3B8112BA0F2FE0014FE63 /* SearchTextField.swift in Sources */,
 			);

@@ -11,6 +11,8 @@ struct ProductDetailView: View {
     
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
+    @EnvironmentObject var cartManager: CartManager
+    
     @StateObject var productDetailVM: ProductDetailViewModel = ProductDetailViewModel(selectedProduct: nil)
     
     @State var selectedSizeOption = 0
@@ -19,7 +21,6 @@ struct ProductDetailView: View {
     let sizeOptions = ["S", "M", "L", "XL"]
     let colorOptions = ["Black", "Pink", "Yellow", "White"]
     
-    //ar selectedProduct: Product?
     
     var body: some View {
         ZStack {
@@ -159,9 +160,13 @@ struct ProductDetailView: View {
                     .frame(width: .screenWidth)
                     
                     HStack {
-                        RoundButton(title: "ADD TO CART") {
-                            
-                        }
+                        RoundButton(title: "ADD TO CART", didTap: {
+                            var currentProduct: Product? = productDetailVM.selectedProduct
+                            currentProduct?.size = self.sizeOptions[self.selectedSizeOption]
+                            currentProduct?.color = self.colorOptions[self.selectedColorOption]
+                            cartManager.addToCart(product: currentProduct)
+                            print(cartManager.products)
+                        })
                         .padding()
                     }
                     .frame(width: .screenWidth)
@@ -180,4 +185,5 @@ struct ProductDetailView: View {
 
 #Preview {
     ProductDetailView()
+        .environmentObject(CartManager())
 }
