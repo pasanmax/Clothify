@@ -18,10 +18,21 @@ class CartManager: ObservableObject{
         total += product!.price
     }
     
+    func increaseProductQuantityPrice(product: Product?) {
+        total += product?.price ?? 0
+    }
+    
+    func decreaseProductQuantityPrice(product: Product?) {
+        total -= product?.price ?? 0
+    }
+    
     func removeFromCart(product: Product?) {
         products = products.filter {
             $0.id != product!.id
         }
-        total -= product!.price
+        //total -= product!.price
+        if (products.isEmpty) {
+            total = 0
+        }
     }
 }

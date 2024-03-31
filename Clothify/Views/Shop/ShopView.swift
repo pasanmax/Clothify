@@ -16,6 +16,7 @@ struct ShopView: View {
     
     @StateObject var shopVM = ShopViewModel.shared
     
+    
     init() {
         self.shopVM.getAllProducts()
     }
@@ -61,6 +62,7 @@ struct ShopView: View {
                             .environmentObject(cartManager)
                         }
                     }
+                    
                 }
                 .padding(.top, 150)
             }

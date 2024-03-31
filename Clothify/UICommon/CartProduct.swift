@@ -12,6 +12,7 @@ struct CartProduct: View {
     @State var quantity: Int = 1
     @EnvironmentObject var cartManager: CartManager
     var product: Product?
+    var price: Int = 0
     
     var body: some View {
         
@@ -58,6 +59,14 @@ struct CartProduct: View {
                           .background(Color.white)
                           .clipShape(Circle())
                           .shadow(radius: 5)
+                          .onTapGesture {
+                              self.quantity -= 1
+                              cartManager.decreaseProductQuantityPrice(product: product)
+                              
+                              if (self.quantity == 0) {
+                                  cartManager.removeFromCart(product: product)
+                              }
+                          }
                         
                         Text("\(self.quantity)")
                             .font(.customfont(.medium, fontSize: 11))
@@ -70,11 +79,17 @@ struct CartProduct: View {
                           .background(Color.white)
                           .clipShape(Circle())
                           .shadow(radius: 5)
+                          .onTapGesture {
+                              self.quantity += 1
+                              
+                              cartManager.increaseProductQuantityPrice(product: product)
+                          }
                         
                         
-                        Text("LKR" + "\(product?.price ?? 0)")
+                        Text("LKR " + "\(self.price * self.quantity )")
                             .font(.customfont(.medium, fontSize: 11))
                             .padding(.leading, 50)
+                            .padding(.trailing, 5)
                     }
                     .padding(.bottom, 3)
                     
@@ -88,4 +103,5 @@ struct CartProduct: View {
 #Preview {
     CartProduct()
         .padding()
+        .environmentObject(CartManager())
 }
