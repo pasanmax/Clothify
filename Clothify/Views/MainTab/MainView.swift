@@ -39,9 +39,11 @@ struct MainView: View {
                 BagView()
                     .environmentObject(cartManager)
             }else if(homeVM.selectedTab == 3) {
-                //FavouriteView()
+                FavouriteView()
+                    .environmentObject(cartManager)
             }else if(homeVM.selectedTab == 4) {
-                //ProfileView()
+                ProfileView()
+                    .environmentObject(cartManager)
             }
             
             VStack {

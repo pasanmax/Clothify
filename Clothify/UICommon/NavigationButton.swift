@@ -19,16 +19,17 @@ struct NavigationButton: View {
             didSelect()
         } label: {
             VStack {
-                Image(icon)
+                Image(isSelect ? icon + "_active" : icon)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
                 
                 Text(title)
                     .font(.customfont(.semibold, fontSize: 14))
+                    .foregroundColor(isSelect ? .pri : .priText)
             }
         }
-        .foregroundColor(isSelect ? .pri : .priText)
+        .foregroundColor(.priText)
         .frame(minWidth: 0, maxWidth: .infinity)
     }
 }
